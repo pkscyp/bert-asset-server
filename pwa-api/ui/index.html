@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Bert Asset</title>
+    <link href="bert.css" rel="stylesheet" />
+</head>
+
+<body>
+    <h1>Bert Device Simulation</h1>
+    <div class="content-area">
+        <p>
+            Demo for Bert registration and Check-in
+        </p>
+
+        <div class="camera">
+            <video id="video">Video stream not available.</video>
+            <p>
+                <button id="camera-button" class="bert-button">Open Camera</button>
+                <button id="start-button" class="bert-button">Take photo</button>
+                <button id="stop-button" class="bert-button">Stop Camera</button>
+            </p>
+        </div>
+        <canvas id="canvas"> </canvas>
+        <div class="output">
+            <img id="photo" alt="The screen capture will appear in this box." />
+        </div>
+        <input id="user_id" value="" placeholder="Enter your user id" />
+        <button id="reg_btn" onclick="send_register()">register</button><button id="chkin_btn" disabled
+            onclick="send_checkin()">Check in</button>
+        <p id="ui_errors" style="color:red;"></p>
+    </div>
+    <div class="content-area">
+        <p> Server Messages </p>
+        <ul id='messages'> </ul>
+    </div>
+    <script src="bert.js">
+
+    </script>
+</body>
+
+</html>

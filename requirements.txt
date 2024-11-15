@@ -1,0 +1,15 @@
+fastapi[all]
+uvicorn[standard]
+datetime
+requests
+prometheus-fastapi-instrumentator
+tzdata
+geopy
+pydantic
+asyncpg
+timezonefinder
+websockets
+pulsar-client[all]==3.5.0
+deepface
+tf-keras
+facenet-pytorch
